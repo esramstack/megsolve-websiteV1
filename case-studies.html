@@ -743,6 +743,69 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
 .member-avatar{font-size:16px;letter-spacing:-.02em}
 @media(max-width:640px){.member-avatar{font-size:13px}}
 
+
+/* ---------- countries served ---------- */
+.countries{
+  display:flex;justify-content:center;align-items:center;gap:0;
+  flex-wrap:wrap;margin-top:34px;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--card);border-radius:var(--radius);overflow:hidden;
+}
+.country{
+  flex:1 1 0;min-width:110px;text-align:center;padding:20px 12px;
+  border-right:1px solid var(--line);transition:background .3s;
+}
+.country:last-child{border-right:none}
+.country:hover{background:var(--cobalt-soft)}
+.country b{
+  display:block;font-family:var(--font-display);font-size:15px;
+  font-weight:600;letter-spacing:-.01em;color:var(--ink);
+}
+.country span{
+  font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--slate);display:block;margin-top:4px;
+}
+@media(max-width:640px){
+  .country{min-width:33.333%;flex:0 0 33.333%;padding:15px 8px;
+    border-bottom:1px solid var(--line)}
+  .country b{font-size:13px}
+  .country span{font-size:8.5px}
+}
+
+/* ---------- prior experience disclosure ---------- */
+.prior{
+  border:1px solid var(--line);border-radius:16px;background:var(--card);
+  padding:34px 32px;
+}
+.prior h3{
+  font-family:var(--font-display);font-size:clamp(19px,2.4vw,25px);
+  font-weight:600;letter-spacing:-.02em;margin:14px 0 10px;
+}
+.prior > p{font-size:15px;color:var(--slate);max-width:680px;line-height:1.7}
+.prior-logos{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 24px}
+.prior-logos span{
+  font-family:var(--font-display);font-size:13.5px;font-weight:600;
+  color:var(--ink);background:var(--paper);
+  border:1px solid var(--line);border-radius:8px;padding:9px 15px;
+}
+.disclaimer{
+  display:flex;gap:14px;align-items:flex-start;
+  border-left:3px solid var(--cobalt);background:var(--cobalt-soft);
+  border-radius:0 10px 10px 0;padding:16px 18px;
+}
+.disclaimer svg{
+  width:18px;height:18px;flex-shrink:0;margin-top:1px;
+  stroke:var(--cobalt);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.disclaimer p{font-size:13.5px;line-height:1.65;color:#1F3A8A;margin:0}
+.disclaimer b{font-weight:600}
+@media(max-width:640px){
+  .prior{padding:24px 20px;border-radius:14px}
+  .prior-logos span{font-size:12px;padding:8px 12px}
+  .disclaimer{padding:14px 15px;gap:11px}
+  .disclaimer p{font-size:12.5px}
+}
+
 </style>
 </head>
 <body>
@@ -764,7 +827,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
 <header class="page-hero page">
   <span class="spec">SPEC 02 · CASE STUDIES</span>
   <h1>Proven results,<br><span style="color:var(--cobalt)">documented.</span></h1>
-  <p>Eighteen engagements across infrastructure, software, security, and strategy. Click any card for the full specification.</p>
+  <p>Seventeen engagements across infrastructure, software, security, and strategy. Click any card for the full specification.</p>
 </header>
 
 <section class="section--tight page">
@@ -811,12 +874,6 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <p style="font-family:var(--font-mono);font-size:11px;color:var(--slate);margin-bottom:8px">Greenball Corp</p>
   <p>Replaced legacy surveillance with Verkada HD cameras at factory facility.</p>
   <div class="metric">30% more coverage</div>
-</a><a class="card reveal" data-cs-tag="Software Development" href="case-restaurant-doordash.html">
-  <span class="spec spec--plain">SOFTWARE DEVELOPMENT</span>
-  <h3>DoorDash Integration with POS</h3>
-  <p style="font-family:var(--font-mono);font-size:11px;color:var(--slate);margin-bottom:8px">US Restaurant Chain</p>
-  <p>Integrated DoorDash ordering directly into the in-store POS system for a US restaurant operation.</p>
-  <div class="metric">Unified order flow</div>
 </a><a class="card reveal" data-cs-tag="Software Development" href="case-msk-inventory.html">
   <span class="spec spec--plain">SOFTWARE DEVELOPMENT</span>
   <h3>Inventory Management Application</h3>

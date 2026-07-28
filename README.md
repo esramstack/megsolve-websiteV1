@@ -1,57 +1,70 @@
 # Megsolve website
 
-23 self-contained HTML pages. Every page has its CSS, JavaScript, logo and
-favicon embedded inside it. There is no assets folder, no build step, no
-dependencies and no configuration.
+Static site. No build step, no dependencies, no server code.
+
+## Contents
+
+```
+index.html            Home
+services.html         Services (7 service lines)
+case-studies.html     Case study index (18, filterable)
+team.html             The Squad + origin story
+contact.html          Contact + enquiry form
+
+case-*.html           17 individual case study pages
+
+assets/
+  style.css           All styling
+  site.js             All behaviour
+  logo.png            Wordmark
+  favicon.png         Favicon
+
+vercel.json           Clean URLs + asset caching
+robots.txt
+sitemap.xml
+```
 
 ## Deploying
 
-Upload all files to the web root. That is the whole procedure.
+### Vercel
+Drag the folder onto the Vercel dashboard, or:
 
-- **Vercel** — drag this folder onto the dashboard, or `npx vercel --prod`.
-  If asked for a framework, choose **Other**.
-- **Netlify** — drag the folder on, or `npx netlify deploy --prod --dir .`
-- **cPanel / FTP / GitHub Pages** — copy the files into the web root.
-
-`index.html` is the home page. Every link uses an explicit `.html` extension,
-so no rewrite rules or clean-URL settings are required.
-
-## Checking it worked
-
-Open the deployed home page. You should see a white page with a faint blue
-drafting grid behind the headline and a dark navigation bar at the top.
-
-If you instead see unstyled black text on white, the files were not uploaded
-to the location being served. Nothing is loaded from outside each file, so
-styling cannot fail for any other reason.
-
-## Files
-
+```bash
+npx vercel --prod
 ```
-index.html          Home
-services.html       7 service lines
-case-studies.html   18 case studies, filterable
-team.html           The Squad + origin story
-contact.html        Contact + enquiry form
-case-*.html         18 individual case study pages
-robots.txt
-sitemap.xml         Update the domain if it is not megsolve.com
+
+No framework preset needed. Choose **Other** if prompted. `vercel.json` enables
+clean URLs, so `/services` works as well as `/services.html`.
+
+### Netlify
+Drag the folder onto the Netlify dashboard, or:
+
+```bash
+npx netlify deploy --prod --dir .
 ```
+
+### GitHub Pages / any static host
+Upload the folder contents to the web root. Nothing else required.
 
 ## Before going live
 
-1. Six of seven team bios still read "Full profile and background coming soon."
-2. The three POS case studies carry no metrics and are attributed to
+1. **Update the domain** in `sitemap.xml` and `robots.txt` if it is not
+   `megsolve.com`.
+2. **Check the contact form.** It opens WhatsApp with the message pre-filled
+   (`+92 336 199 3378`). There is no backend. If you want emailed submissions,
+   swap the handler in `assets/site.js` for a form service such as Formspree.
+3. **Team bios.** Six of the seven roster entries read "Full profile and
+   background coming soon." in `team.html`.
+4. **POS case studies.** `case-pos-database.html`, `case-pos-aggrid.html` and
+   `case-pos-architecture.html` have no metrics and are attributed to
    "POS Platform, Pakistan". Add real figures and the client name.
-3. No case study screenshots are embedded yet.
-4. The contact form opens WhatsApp (+92 336 199 3378). There is no backend.
-5. `sitemap.xml` assumes the domain is megsolve.com.
+5. **Case study images.** No screenshots are embedded anywhere yet.
 
 ## Editing
 
-Each page carries its own copy of the stylesheet in a `<style>` block and the
-script in a `<script>` block. A site-wide style change means editing every
-file, which is the trade made for pages that cannot break.
+Everything is plain HTML. To change styling site-wide, edit `assets/style.css`.
+To change behaviour (nav, filters, counters, background canvas), edit
+`assets/site.js`. Both are shared by every page.
 
-If you would prefer a shared `assets/style.css` and `assets/site.js` instead,
-ask and I will repackage it that way.
+Design tokens live at the top of `style.css` as CSS custom properties:
+paper `#F7F8FA`, ink `#0E1526`, cobalt `#2547E8`, mint `#0EA88F`.

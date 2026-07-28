@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS Microservices and Microfrontend Architecture | Megsolve</title>
+<meta name="description" content="Decomposing a Pakistani POS platform into microservices and microfrontends on AWS with a plugin model for client-specific features.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Megsolve"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="team.html">The Squad</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">START A PROJECT</a>
+    <button class="nav-burger" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<header class="page-hero page">
+  <a class="backlink" href="case-studies.html"><svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> All case studies</a>
+  <div style="margin-top:22px"><span class="spec">CASE STUDY &amp;middot; SOFTWARE DEVELOPMENT</span></div>
+  <h1>Breaking a monolith <span style="color:var(--cobalt)">into parts that ship separately.</span></h1>
+  <p>Microservices, microfrontends, and a plugin architecture for a Pakistani POS platform on AWS, so features could be released without redeploying the product.</p>
+  <dl class="kv reveal"><div><dt>Client</dt><dd>POS Platform, Pakistan</dd></div><div><dt>Engagement</dt><dd>Software Development</dd></div><div><dt>Hosting</dt><dd>AWS</dd></div><div><dt>Scope</dt><dd>Platform Architecture</dd></div></dl>
+</header>
+
+
+
+<section class="section--tight page">
+  <div class="spec-head reveal">
+    <h2>The opportunity</h2>
+    <span class="spec">01 &middot; CONTEXT</span>
+  </div>
+  <div class="prose reveal"><p>The POS platform had grown as a single deployable unit. Every change, however small, required releasing the entire product, and every client-specific requirement added conditional logic to a shared codebase.</p><p>Two costs compounded. Release risk rose, because a change to reporting could break checkout. And customisation became structurally expensive, because bespoke features for one retailer lived in the same code path as everyone else&#x27;s.</p><p>The platform needed boundaries: services that could scale and deploy independently, and a way to add client-specific functionality without forking the core.</p></div>
+</section>
+
+<section class="section--tight page">
+  <div class="spec-head reveal">
+    <h2>The solution</h2>
+    <span class="spec">02 &middot; DELIVERY</span>
+  </div>
+  <div class="prose reveal" style="margin-bottom:26px"><p>Decomposition along business capability lines, applied at both the backend and the frontend, with a plugin layer for anything client-specific.</p></div>
+  <div class="phase reveal">
+  <div class="phase-num">PH 01</div>
+  <div class="phase-body"><h4>Microservice decomposition</h4><ul><li>Domain boundaries identified around business capabilities rather than technical layers</li><li>Services separated so they could be deployed and scaled independently on AWS</li><li>Inter-service communication contracts defined explicitly at the boundaries</li></ul></div>
+</div><div class="phase reveal">
+  <div class="phase-num">PH 02</div>
+  <div class="phase-body"><h4>Microfrontend composition</h4><ul><li>Frontend split into independently buildable modules aligned to the service boundaries</li><li>Shell application composing modules at runtime</li><li>Shared design language and component conventions maintained across modules for a single product feel</li></ul></div>
+</div><div class="phase reveal">
+  <div class="phase-num">PH 03</div>
+  <div class="phase-body"><h4>Plugin architecture</h4><ul><li>Extension points defined so client-specific features attach without modifying core code</li><li>Bespoke functionality delivered as plugins rather than conditional branches in shared paths</li><li>Core platform kept upgradable independently of client customisations</li></ul></div>
+</div>
+</section>
+
+<section class="section--tight page">
+  <div class="spec-head reveal">
+    <h2>The impact</h2>
+    <span class="spec">03 &middot; OUTCOME</span>
+  </div>
+  <div class="impact reveal"><h4>Independent delivery</h4><ul><li>Teams able to release changes to one area without redeploying the whole platform</li><li>Release blast radius reduced: a reporting change no longer risks checkout</li></ul></div><div class="impact reveal"><h4>Customisation without forking</h4><ul><li>Client-specific requirements delivered through the plugin layer</li><li>Core product remaining upgradable for every client regardless of their customisations</li></ul></div><div class="impact reveal"><h4>Targeted scaling</h4><ul><li>Services scaled individually on AWS according to their own load profile</li><li>Infrastructure spend aligned to where demand actually sits</li></ul></div>
+  <div class="tags reveal" style="margin-top:26px"><span class="tag">Microservices</span><span class="tag">Microfrontends</span><span class="tag">Plugin Architecture</span><span class="tag">AWS</span><span class="tag">Independent Deployment</span><span class="tag">Domain-Driven Boundaries</span></div>
+</section>
+
+<section class="section page" style="padding-top:24px">
+  <div class="story reveal">
+    <span class="spec">CLOSING NOTE</span>
+    <p class="lede" style="margin-top:18px">The point of the split was not architectural fashion. It was letting one retailer&#x27;s custom requirement ship without putting every other retailer&#x27;s checkout at risk.</p>
+    <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="contact.html">Start a project <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      
+    </div>
+  </div>
+  <div class="case-nav reveal"><a href="case-pos-aggrid.html"><span class="dir">&larr; Previous</span><span class="ttl">AG Grid Data Display and Interaction</span></a><a href="case-studies.html"><span class="dir">Next &rarr;</span><span class="ttl">All case studies</span></a></div>
+</section>
+<footer class="footer">
+  <div class="footer-cols">
+    <div>
+      <a class="footer-logo" href="index.html"><img src="assets/logo.png" alt="Megsolve"></a>
+      <p class="footer-tag">Engineering the future of business through strategy, software, and scalable systems.</p>
+      <div class="socials">
+  <a href="https://www.linkedin.com/company/megsolve/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.01"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M16 16v-3a2 2 0 0 0-4 0"/></svg></a>
+  <a href="https://www.instagram.com/megsolve/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.51"/></svg></a>
+  <a href="https://www.esramgibran.online/" target="_blank" rel="noopener noreferrer" aria-label="Lead's Portfolio"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></a>
+  <a href="mailto:business@megsolve.com" aria-label="Email"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+</div>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="team.html">The Squad</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <a href="mailto:business@megsolve.com">business@megsolve.com</a>
+      <a href="mailto:contact@megsolve.com">contact@megsolve.com</a>
+      <a href="tel:+923361993378">+92 336 199 3378</a>
+      <a href="https://wa.me/923361993378" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+    <div>
+      <h4>Ask AI about Megsolve</h4>
+      <div class="ai-grid"><a class="ai-card" href="https://chat.openai.com/?q=Hey%2C%20I%20am%20exploring%20companies%20that%20provide%20custom%20software%20development%20and%20digital%20transformation%20services.%20Explain%20how%20MegSolve%20helps%20organizations%20build%20scalable%20enterprise%20solutions%20using%20AI%20engineering%2C%20cloud%20architecture%2C%20and%20full-stack%20development%2C%20based%20on%20the%20information%20available%20on%20their%20website%3A%20https%3A//megsolve.com." target="_blank" rel="noopener noreferrer"><b>&#9676;</b><span>ChatGPT</span></a><a class="ai-card" href="https://claude.ai/new?q=Hey%2C%20I%20am%20exploring%20companies%20that%20provide%20custom%20software%20development%20and%20digital%20transformation%20services.%20Explain%20how%20MegSolve%20helps%20organizations%20build%20scalable%20enterprise%20solutions%20using%20AI%20engineering%2C%20cloud%20architecture%2C%20and%20full-stack%20development%2C%20based%20on%20the%20information%20available%20on%20their%20website%3A%20https%3A//megsolve.com." target="_blank" rel="noopener noreferrer"><b>A\</b><span>Claude</span></a><a class="ai-card" href="https://grok.x.ai/" target="_blank" rel="noopener noreferrer"><b>X</b><span>Grok</span></a><a class="ai-card" href="https://www.perplexity.ai/search?q=Hey%2C%20I%20am%20exploring%20companies%20that%20provide%20custom%20software%20development%20and%20digital%20transformation%20services.%20Explain%20how%20MegSolve%20helps%20organizations%20build%20scalable%20enterprise%20solutions%20using%20AI%20engineering%2C%20cloud%20architecture%2C%20and%20full-stack%20development%2C%20based%20on%20the%20information%20available%20on%20their%20website%3A%20https%3A//megsolve.com." target="_blank" rel="noopener noreferrer"><b>&#10022;</b><span>Perplexity</span></a><a class="ai-card" href="https://copilot.microsoft.com/?q=Hey%2C%20I%20am%20exploring%20companies%20that%20provide%20custom%20software%20development%20and%20digital%20transformation%20services.%20Explain%20how%20MegSolve%20helps%20organizations%20build%20scalable%20enterprise%20solutions%20using%20AI%20engineering%2C%20cloud%20architecture%2C%20and%20full-stack%20development%2C%20based%20on%20the%20information%20available%20on%20their%20website%3A%20https%3A//megsolve.com." target="_blank" rel="noopener noreferrer"><b>&#9707;</b><span>Copilot</span></a><a class="ai-card" href="https://www.google.com/search?q=MegSolve+software+AI+engineering" target="_blank" rel="noopener noreferrer"><b>G</b><span>Google</span></a></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 MEGSOLVE (PRIVATE) LIMITED</span>
+    <span>ALL RIGHTS RESERVED</span>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

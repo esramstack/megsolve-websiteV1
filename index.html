@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Megsolve — Engineering a Digital Tomorrow</title>
+<title>Megsolve | Engineering a Digital Tomorrow</title>
 <meta name="description" content="Technology consulting and software engineering. Strategy, software, and scalable systems for healthcare, retail, education, and enterprise.">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR4nO2bMVLDMBBFv9VRQQdnAEpKbsQZqDgDN6KkhJyBdKSihEqMYiuyFe/uH0v7u9gaz76ntTzWxAMqcnl9+1sznpXDfjcsHTs7cCvQpzInI5RObh0emGfI2mkBPJdcN0w6oFV4IM8W5ga0ljFjcQ3oIf8Cepj9mJQ1jA/0ksjstwC7AHaGHts/Tfcd4ALYBbAjIuD761PiMtW5f3pffY2zF8Ec9NXN3eqCliYH//H6UH0d0VvAqhMkZj5GfA3QliAJDygtgloSpOEBxaeAtAQNeED5MSglQQseEBaQewqslSC12p+KeAdIStCGB5RuAQkJFvCA4hqwRoIVPKC8CJ4jwRIeMHgZqpFgDQ8YvQ0ukcCABwxfh0sSWPCA8X5ATgITHiBsiKQSHl9+Juct4QHSjlCU8PZ8cXTcGh4gbolFCRGaAQ+Q9wTHEhjxTVF2Aey4AHYB7LgAdgHsuAB2Aey4AHYB7LgAdgHsuAB2Aez4v8TYBbDjAtgFsBNqPjBqLYf9bvAOYBfATgDqvrNrJZE5jA/0kJTVb4H0Rw9dMGacdEDLEnJsRdhW3hNKk1pcA1rohjmGKsCtdETNxP0BIwej2OGtuYQAAAAASUVORK5CYII=">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR4nO2bMVLDMBBFv9VRQQdnAEpKbsQZqDgDN6KkhJyBdKSihEqMYiuyFe/uH0v7u9gaz76ntTzWxAMqcnl9+1sznpXDfjcsHTs7cCvQpzInI5RObh0emGfI2mkBPJdcN0w6oFV4IM8W5ga0ljFjcQ3oIf8Cepj9mJQ1jA/0ksjstwC7AHaGHts/Tfcd4ALYBbAjIuD761PiMtW5f3pffY2zF8Ec9NXN3eqCliYH//H6UH0d0VvAqhMkZj5GfA3QliAJDygtgloSpOEBxaeAtAQNeED5MSglQQseEBaQewqslSC12p+KeAdIStCGB5RuAQkJFvCA4hqwRoIVPKC8CJ4jwRIeMHgZqpFgDQ8YvQ0ukcCABwxfh0sSWPCA8X5ATgITHiBsiKQSHl9+Juct4QHSjlCU8PZ8cXTcGh4gbolFCRGaAQ+Q9wTHEhjxTVF2Aey4AHYB7LgAdgHsuAB2Aey4AHYB7LgAdgHsuAB2Aez4v8TYBbDjAtgFsBNqPjBqLYf9bvAOYBfATgDqvrNrJZE5jA/0kJTVb4H0Rw9dMGacdEDLEnJsRdhW3hNKk1pcA1rohjmGKsCtdETNxP0BIwej2OGtuYQAAAAASUVORK5CYII=">
@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>/* ============================================================
-   MEGSOLVE — Specification Document design system
+   MEGSOLVE · Specification Document design system
    paper #F7F8FA · ink #0E1526 · cobalt #2547E8 · mint #0EA88F
    Display: Space Grotesk · Body: Instrument Sans · Mono: IBM Plex Mono
    ============================================================ */
@@ -245,7 +245,7 @@ button{font-family:inherit;cursor:pointer}
 .metric{
   font-family:var(--font-mono);font-size:12px;color:var(--mint);
   display:flex;align-items:center;gap:7px;margin-top:16px;
-  padding-top:14px;border-top:1px dashed var(--line);
+  padding-top:14px;border-top:1px solid var(--line);
 }
 .metric::before{content:"▸"}
 
@@ -369,7 +369,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 /* ---------- contact ---------- */
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:start}
 @media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
-.c-item{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px dashed var(--line)}
+.c-item{display:flex;gap:16px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--line)}
 .c-item:last-child{border-bottom:none}
 .c-icon{
   width:42px;height:42px;border-radius:11px;background:var(--cobalt-soft);flex-shrink:0;
@@ -429,7 +429,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
   display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
-.footer-logo img{height:26px;filter:brightness(4)}
+.footer-logo img{height:28px}
 .footer-tag{font-size:13px;line-height:1.65;margin:16px 0 20px;max-width:230px}
 .footer h4{
   font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
@@ -481,6 +481,180 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 
 /* drafting canvas background */
 #draft-canvas{position:fixed;inset:0;z-index:-1;pointer-events:none}
+
+
+/* ============================================================
+   MOBILE REFINEMENT PASS
+   ============================================================ */
+
+/* base touch behaviour */
+html{-webkit-text-size-adjust:100%}
+body{overflow-x:clip}
+a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)}
+.nav-links a,.acc-head,.filter,.socials a,.btn,.nav-cta{touch-action:manipulation}
+
+/* touch devices: no sticky hover transforms, use press feedback instead */
+@media (hover:none){
+  .card:hover,.ind:hover .ind-icon,.socials a:hover,.btn:hover,.nav-cta:hover,.cs-view:hover{
+    transform:none;box-shadow:none;
+  }
+  .card::before,.card::after{display:none}
+  .card:active{transform:scale(.985);border-color:rgba(37,71,232,.4)}
+  .btn:active,.nav-cta:active,.cs-view:active{transform:scale(.97)}
+  .ind:active .ind-icon{border-color:rgba(37,71,232,.45);background:var(--cobalt-soft)}
+  .ind:active .ind-icon svg{stroke:var(--cobalt)}
+  .ticker-track{animation-play-state:running !important}
+}
+
+/* ---------- tablet ---------- */
+@media (max-width:900px){
+  .page,.hero-inner{padding-left:22px;padding-right:22px}
+  .section{padding:56px 0}
+  .section--tight{padding:38px 0}
+  .story{padding:42px 34px}
+  .contact-grid{gap:32px}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:640px){
+  .page,.hero-inner,.nav-inner{padding-left:18px;padding-right:18px}
+  .section{padding:44px 0}
+  .section--tight{padding:32px 0}
+
+  /* nav */
+  .nav-inner{height:60px}
+  .nav-logo img{height:22px}
+  .nav-links{top:60px;max-height:calc(100vh - 60px);overflow-y:auto}
+  .nav-links li{border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav-links li:last-child{border-bottom:none}
+  .nav-links a{padding:14px 12px;font-size:15.5px;border-radius:10px}
+
+  /* hero */
+  .hero{padding:118px 0 56px;background-size:auto,32px 32px,32px 32px}
+  .hero h1{font-size:clamp(34px,11vw,52px);letter-spacing:-.03em}
+  .hero-sub{font-size:16px;margin-top:20px}
+  .measure{max-width:100%;margin-top:26px}
+  .measure .m-label{font-size:9px;padding:0 8px}
+  .hero-ctas{margin-top:30px;gap:10px}
+  .btn{width:100%;justify-content:center;padding:15px 22px}
+  .hero-ctas .btn{width:100%}
+
+  /* inner page heroes */
+  .page-hero{padding:104px 0 32px}
+  .page-hero h1{font-size:clamp(30px,9vw,42px)}
+  .page-hero p{font-size:15px;margin-top:14px}
+
+  /* section headers */
+  .spec-head{gap:8px;padding-bottom:14px;margin-bottom:26px}
+  .spec-head h2{font-size:clamp(23px,7vw,32px)}
+  .spec-head .spec{font-size:10px}
+
+  /* ticker */
+  .ticker{padding:12px 0}
+  .ticker-item{font-size:10.5px;padding:0 18px;gap:16px}
+
+  /* cards */
+  .grid{gap:14px}
+  .card{padding:22px 20px}
+  .card h3{font-size:16.5px}
+  .card p{font-size:13.5px}
+
+  /* accordion */
+  .acc-head{padding:18px 16px;gap:12px}
+  .acc-num{min-width:auto;font-size:10px}
+  .acc-title{font-size:15.5px;line-height:1.3}
+  .acc-chev{width:26px;height:26px}
+  .acc-chev svg{width:11px;height:11px}
+  .acc-inner{padding:0 16px 20px}
+  .acc-inner p{font-size:14px}
+  .tag{font-size:10px;padding:4px 8px}
+
+  /* team rows */
+  .member{gap:12px}
+  .member-avatar{width:44px;height:44px;border-radius:11px;font-size:14px}
+  .member-name{font-size:15px}
+  .member-role{font-size:9.5px}
+
+  /* filters: horizontal scroll strip instead of wrapping */
+  .filters{
+    flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
+    margin:0 -18px 24px;padding:0 18px 8px;
+    scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;
+  }
+  .filters::-webkit-scrollbar{display:none}
+  .filter{flex:0 0 auto;font-size:11px;padding:9px 15px}
+
+  /* stats stay 3-across but compact */
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .stat{padding:18px 8px}
+  .stat b{font-size:24px}
+  .stat span{font-size:8.5px;letter-spacing:.05em;line-height:1.3;display:block}
+
+  /* industries */
+  .inds{gap:14px 10px}
+  .ind{width:calc(33.333% - 8px)}
+  .ind-icon{width:46px;height:46px;border-radius:12px}
+  .ind-icon svg{width:21px;height:21px}
+  .ind span{font-size:11px}
+
+  /* story panel */
+  .story{padding:30px 22px;border-radius:14px}
+  .story .lede{font-size:16.5px}
+  .story p{font-size:14.5px;line-height:1.7}
+  .story h3{font-size:22px !important}
+
+  /* national initiative cards inside story */
+  .story .grid-3{gap:12px;margin-top:24px !important}
+  .story .grid-3 > div{padding:18px !important}
+
+  /* contact */
+  .form{padding:24px 20px;border-radius:14px}
+  .form input,.form textarea,.form select{font-size:16px;padding:13px 14px}
+  .form textarea{min-height:110px}
+  .c-item{padding:16px 0;gap:13px}
+  .c-icon{width:38px;height:38px;border-radius:10px}
+  .c-icon svg{width:16px;height:16px}
+  .socials{gap:9px;margin-top:18px}
+  .socials a{width:44px;height:44px}
+
+  /* modal → bottom sheet feel */
+  dialog.cs-modal{
+    width:100%;max-width:100%;margin:auto auto 0;
+    border-radius:18px 18px 0 0;max-height:92vh;
+  }
+  .cs-modal-body{padding:26px 20px 34px}
+  .cs-modal-body h3{font-size:20px}
+  .cs-block p{font-size:14px}
+  .cs-close{margin:10px 10px 0 0;width:34px;height:34px}
+  .cs-view{width:100%;justify-content:center;padding:14px 20px}
+
+  /* footer */
+  .footer{margin-top:56px}
+  .footer-cols{padding:40px 18px 32px;gap:28px}
+  .footer-bottom{padding:16px 18px;font-size:9.5px;justify-content:center;text-align:center}
+  .ai-grid{gap:7px}
+  .ai-card{padding:11px 4px}
+  .ai-card b{font-size:15px}
+  .ai-card span{font-size:9px}
+}
+
+/* ---------- small phones ---------- */
+@media (max-width:380px){
+  .page,.hero-inner,.nav-inner{padding-left:15px;padding-right:15px}
+  .hero h1{font-size:32px}
+  .ind{width:calc(50% - 6px)}
+  .stat b{font-size:21px}
+  .ticker-item{padding:0 14px}
+  .nav-logo img{height:20px}
+}
+
+/* ---------- landscape phone ---------- */
+@media (max-height:520px) and (orientation:landscape){
+  .hero{padding:96px 0 44px}
+  .page-hero{padding:92px 0 28px}
+  .nav-links{max-height:calc(100vh - 60px);overflow-y:auto}
+}
 </style>
 </head>
 <body>
@@ -501,8 +675,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 
 <header class="hero">
   <div class="hero-inner">
-    <span class="spec rise d1">MEGSOLVE (PRIVATE) LIMITED — TECHNOLOGY CONSULTING</span>
-    <h1 style="margin-top:22px">
+    <h1>
       <span class="rise d1" style="display:block">Engineering</span>
       <span class="rise d2 accent" style="display:block">a Digital</span>
       <span class="rise d3" style="display:block">Tomorrow.</span>
@@ -523,30 +696,30 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 <section class="section page">
   <div class="spec-head reveal">
     <h2>What we deliver</h2>
-    <span class="spec">SPEC 01 — SERVICES</span>
+    <span class="spec">SPEC 01 · SERVICES</span>
   </div>
   <div class="grid grid-3"><a class="card reveal" href="services.html">
-  <span class="spec">SVC-01</span>
+  <span class="spec">SVC 01</span>
   <h3>Digital Sales, Marketing &amp; Branding</h3>
   <p>Full-funnel growth: brand identity, GTM strategy, and performance marketing.</p>
 </a><a class="card reveal" href="services.html">
-  <span class="spec">SVC-02</span>
+  <span class="spec">SVC 02</span>
   <h3>Software &amp; App Development</h3>
   <p>Web, mobile, and enterprise applications engineered to scale.</p>
 </a><a class="card reveal" href="services.html">
-  <span class="spec">SVC-03</span>
+  <span class="spec">SVC 03</span>
   <h3>Specialized Staff Augmentation</h3>
   <p>Elite embedded talent. Zero ramp-up. Ready to ship.</p>
 </a><a class="card reveal" href="services.html">
-  <span class="spec">SVC-04</span>
+  <span class="spec">SVC 04</span>
   <h3>Business, Operations &amp; Strategy Consulting</h3>
   <p>Operational clarity and strategy that survives contact with reality.</p>
 </a><a class="card reveal" href="services.html">
-  <span class="spec">SVC-05</span>
+  <span class="spec">SVC 05</span>
   <h3>Advisors on Partnerships, Acquisitions &amp; Mergers</h3>
   <p>Deal advisory from diligence to integration.</p>
 </a><a class="card reveal" href="services.html">
-  <span class="spec">SVC-06</span>
+  <span class="spec">SVC 06</span>
   <h3>Digital Transformation</h3>
   <p>Legacy modernization, automation, and cloud migration end to end.</p>
 </a></div>
@@ -558,7 +731,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 <section class="section page" style="padding-top:0">
   <div class="spec-head reveal">
     <h2>Recent work</h2>
-    <span class="spec">SPEC 02 — CASE STUDIES</span>
+    <span class="spec">SPEC 02 · CASE STUDIES</span>
   </div>
   <div class="grid grid-3"><article class="card reveal">
   <span class="spec spec--plain">SOFTWARE DEVELOPMENT</span>
@@ -584,6 +757,31 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
   </div>
 </section>
 
+<section class="section page" style="padding-top:0">
+  <div class="story reveal">
+    <span class="spec">SPEC 03 · NATIONAL INITIATIVES</span>
+    <h3 style="font-size:clamp(24px,3.4vw,38px);margin-top:20px;line-height:1.15">Supporting Pakistan's<br>largest-scale ambitions.</h3>
+    <p style="margin-top:18px">Megsolve works alongside national-scale programmes, current and future, contributing the digital strategy and engineering that large initiatives need to scale. Our flagship engagement: the technology backbone for Pakistan's emerging medical tourism economy.</p>
+    <div class="grid grid-3" style="margin-top:34px">
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px">
+        <span class="spec" style="color:#7C93F5">NI 01</span>
+        <h4 style="font-family:var(--font-display);color:#fff;font-size:15.5px;margin:10px 0 8px;font-weight:600">Medical Tourism Digital Ecosystem</h4>
+        <p style="font-size:13.5px;line-height:1.6">EMR, CRM, telemedicine, and AI diagnostic modules engineered for internationally compliant patient care at national scale.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px">
+        <span class="spec" style="color:#7C93F5">NI 02</span>
+        <h4 style="font-family:var(--font-display);color:#fff;font-size:15.5px;margin:10px 0 8px;font-weight:600">Sovereign Infrastructure First</h4>
+        <p style="font-size:13.5px;line-height:1.6">Architectures designed for Pakistan's AI-ready sovereign data centers, keeping data residency at home while meeting UK, EU, and Australian compliance.</p>
+      </div>
+      <div style="border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:22px">
+        <span class="spec" style="color:#7C93F5">NI 03</span>
+        <h4 style="font-family:var(--font-display);color:#fff;font-size:15.5px;margin:10px 0 8px;font-weight:600">From Clinic to Country</h4>
+        <p style="font-size:13.5px;line-height:1.6">Scaling proven healthcare operations systems into national programmes, from patient management to cross-border telemedicine follow-up.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section--tight page">
   <div style="text-align:center;margin-bottom:30px"><span class="spec spec--plain">INDUSTRIES WE SERVE</span></div>
   <div class="inds"><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M22 9L12 5 2 9l10 4 10-4z"/><path d="M6 11v5c0 2 3 3 6 3s6-1 6-3v-5"/><path d="M22 9v5"/></svg></div><span>Educational Sectors</span></div><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 10l2 2 4-4"/></svg></div><span>Professional Development</span></div><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 8v8"/><path d="M8 12h8"/></svg></div><span>Healthcare</span></div><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9l3 3-3 3"/><path d="M13 15h4"/></svg></div><span>Information Technology</span></div><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><path d="M3 11h18"/><path d="M5 11V7a3 3 0 0 1 6 0v4"/><path d="M13 11V4"/><path d="M3 11v1a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-1"/></svg></div><span>Restaurant & Hospitality</span></div><div class="ind reveal"><div class="ind-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/><path d="M15 21V9"/></svg></div><span>Retail</span></div></div>
@@ -591,7 +789,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
 
 <section class="section page">
   <div class="story reveal">
-    <span class="spec">ORIGIN — WHY WE EXIST</span>
+    <span class="spec">ORIGIN · WHY WE EXIST</span>
     <p class="lede" style="margin-top:20px">A clinic in Islamabad. Midnight. A technician writing a graft count on a scrap of paper, because the system holding world-class surgery together lived on sticky notes, WhatsApp pings, and memory.</p>
     <p style="margin-top:18px">That image never left us. We didn't set out to build software. We set out to make that scrap of paper obsolete. Today we operate across healthcare, education, retail, and emerging technology, finding the inefficiencies others have accepted as normal, and engineering them away.</p>
     <div style="margin-top:30px"><a class="btn btn-primary" href="team.html">Meet the squad <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
@@ -620,6 +818,7 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
     <div class="footer-col">
       <h4>Get in touch</h4>
       <a href="mailto:business@megsolve.com">business@megsolve.com</a>
+      <a href="mailto:contact@megsolve.com">contact@megsolve.com</a>
       <a href="tel:+923361993378">+92 336 199 3378</a>
       <a href="https://wa.me/923361993378" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </div>
@@ -750,12 +949,32 @@ dialog.cs-modal::backdrop{background:rgba(14,21,38,.5);backdrop-filter:blur(6px)
     var burger = document.querySelector(".nav-burger");
     var links = document.querySelector(".nav-links");
     if (burger && links) {
-      burger.addEventListener("click", function () {
-        links.classList.toggle("open");
+      function setMenu(open) {
+        links.classList.toggle("open", open);
+        burger.setAttribute("aria-expanded", open ? "true" : "false");
+        document.body.style.overflow = open ? "hidden" : "";
+      }
+      burger.setAttribute("aria-expanded", "false");
+      burger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        setMenu(!links.classList.contains("open"));
       });
       links.querySelectorAll("a").forEach(function (a) {
-        a.addEventListener("click", function () { links.classList.remove("open"); });
+        a.addEventListener("click", function () { setMenu(false); });
       });
+      /* tap outside closes */
+      document.addEventListener("click", function (e) {
+        if (!links.classList.contains("open")) return;
+        if (!links.contains(e.target) && e.target !== burger) setMenu(false);
+      });
+      /* esc closes */
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") setMenu(false);
+      });
+      /* rotating to desktop resets state */
+      addEventListener("resize", function () {
+        if (innerWidth > 820) setMenu(false);
+      }, { passive: true });
     }
 
     /* ---------- active nav link ---------- */

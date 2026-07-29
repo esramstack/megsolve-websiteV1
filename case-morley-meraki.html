@@ -806,6 +806,24 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   .disclaimer p{font-size:12.5px}
 }
 
+
+/* ---------- case study provenance note ---------- */
+.provenance{
+  display:flex;gap:13px;align-items:flex-start;margin-top:18px;
+  border:1px solid var(--line);border-left:3px solid var(--slate);
+  border-radius:0 10px 10px 0;background:var(--card);padding:15px 18px;
+}
+.provenance svg{
+  width:17px;height:17px;flex-shrink:0;margin-top:1px;
+  stroke:var(--slate);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.provenance p{font-size:13px;line-height:1.6;color:var(--slate);margin:0}
+.provenance b{color:var(--ink);font-weight:600}
+@media(max-width:640px){
+  .provenance{padding:13px 15px;gap:11px}
+  .provenance p{font-size:12.5px}
+}
+
 </style>
 </head>
 <body>
@@ -830,6 +848,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <h1>Three sites, <span style="color:var(--cobalt)">no more dead zones.</span></h1>
   <p>Strategic Cisco Meraki access point deployment across residential and yard locations for a Southern California construction firm.</p>
   <dl class="kv reveal"><div><dt>Client</dt><dd>Morley Builders</dd></div><div><dt>Engagement</dt><dd>Field Services</dd></div><div><dt>Locations</dt><dd>3 sites</dd></div><div><dt>Scope</dt><dd>Wireless Network</dd></div></dl>
+  <div class="provenance reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><p><b>Provenance:</b> this engagement was delivered under PM2net, prior to the founding of Megsolve. It was led by Esram Gibran Khan, now Managing Partner at Megsolve, and is presented here as documented delivery experience rather than as a Megsolve client engagement.</p></div>
 </header>
 
 <section class="section--tight page"><div class="stats reveal"><div class="stat"><b data-count>5</b><span>Access points deployed</span></div><div class="stat"><b data-count>3</b><span>Switches installed</span></div><div class="stat"><b data-count>4</b><span>Cable drops</span></div></div></section>

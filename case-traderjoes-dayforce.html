@@ -806,6 +806,24 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   .disclaimer p{font-size:12.5px}
 }
 
+
+/* ---------- case study provenance note ---------- */
+.provenance{
+  display:flex;gap:13px;align-items:flex-start;margin-top:18px;
+  border:1px solid var(--line);border-left:3px solid var(--slate);
+  border-radius:0 10px 10px 0;background:var(--card);padding:15px 18px;
+}
+.provenance svg{
+  width:17px;height:17px;flex-shrink:0;margin-top:1px;
+  stroke:var(--slate);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.provenance p{font-size:13px;line-height:1.6;color:var(--slate);margin:0}
+.provenance b{color:var(--ink);font-weight:600}
+@media(max-width:640px){
+  .provenance{padding:13px 15px;gap:11px}
+  .provenance p{font-size:12.5px}
+}
+
 </style>
 </head>
 <body>
@@ -830,6 +848,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <h1>520 stores, 21 days, <span style="color:var(--cobalt)">zero downtime.</span></h1>
   <p>Upgrading Ceridian Dayforce timeclock devices and attendance management across more than 520 stores spanning every US time zone.</p>
   <dl class="kv reveal"><div><dt>Client</dt><dd>Trader Joe&#x27;s</dd></div><div><dt>Engagement</dt><dd>Advance Engineering</dd></div><div><dt>Timeline</dt><dd>21 days</dd></div><div><dt>Scope</dt><dd>520+ stores</dd></div></dl>
+  <div class="provenance reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><p><b>Provenance:</b> this engagement was delivered under PM2net, prior to the founding of Megsolve. It was led by Esram Gibran Khan, now Managing Partner at Megsolve, and is presented here as documented delivery experience rather than as a Megsolve client engagement.</p></div>
 </header>
 
 <section class="section--tight page"><div class="stats reveal"><div class="stat"><b data-count>12</b><span>Days ahead of deadline</span></div><div class="stat"><b data-count>20K</b><span>Cost savings</span></div><div class="stat"><b data-count>520</b><span>Stores upgraded</span></div></div></section>

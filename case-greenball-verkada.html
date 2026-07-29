@@ -806,6 +806,24 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   .disclaimer p{font-size:12.5px}
 }
 
+
+/* ---------- case study provenance note ---------- */
+.provenance{
+  display:flex;gap:13px;align-items:flex-start;margin-top:18px;
+  border:1px solid var(--line);border-left:3px solid var(--slate);
+  border-radius:0 10px 10px 0;background:var(--card);padding:15px 18px;
+}
+.provenance svg{
+  width:17px;height:17px;flex-shrink:0;margin-top:1px;
+  stroke:var(--slate);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.provenance p{font-size:13px;line-height:1.6;color:var(--slate);margin:0}
+.provenance b{color:var(--ink);font-weight:600}
+@media(max-width:640px){
+  .provenance{padding:13px 15px;gap:11px}
+  .provenance p{font-size:12.5px}
+}
+
 </style>
 </head>
 <body>
@@ -830,6 +848,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <h1>A factory floor, <span style="color:var(--cobalt)">rebuilt in five days.</span></h1>
   <p>Replacing obsolete bullet cameras and failing NVRs with Verkada high-definition surveillance, plus the network infrastructure to actually support it.</p>
   <dl class="kv reveal"><div><dt>Client</dt><dd>Greenball Corporation</dd></div><div><dt>Engagement</dt><dd>Field Services</dd></div><div><dt>Timeline</dt><dd>5 working days</dd></div><div><dt>Partner</dt><dd>Verkada</dd></div></dl>
+  <div class="provenance reveal"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><p><b>Provenance:</b> this engagement was delivered under PM2net, prior to the founding of Megsolve. It was led by Esram Gibran Khan, now Managing Partner at Megsolve, and is presented here as documented delivery experience rather than as a Megsolve client engagement.</p></div>
 </header>
 
 <section class="section--tight page"><div class="stats reveal"><div class="stat"><b data-count>30%</b><span>More camera coverage</span></div><div class="stat"><b data-count>40%</b><span>Network performance gain</span></div><div class="stat"><b data-count>100%</b><span>Configuration success rate</span></div></div></section>

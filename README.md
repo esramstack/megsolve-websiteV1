@@ -11,7 +11,7 @@ case-studies.html     Case study index (18, filterable)
 team.html             The Squad + origin story
 contact.html          Contact + enquiry form
 
-case-*.html           17 individual case study pages
+case-*.html           18 individual case study pages
 
 assets/
   style.css           All styling

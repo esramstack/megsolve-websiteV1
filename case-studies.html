@@ -806,6 +806,24 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   .disclaimer p{font-size:12.5px}
 }
 
+
+/* ---------- case study provenance note ---------- */
+.provenance{
+  display:flex;gap:13px;align-items:flex-start;margin-top:18px;
+  border:1px solid var(--line);border-left:3px solid var(--slate);
+  border-radius:0 10px 10px 0;background:var(--card);padding:15px 18px;
+}
+.provenance svg{
+  width:17px;height:17px;flex-shrink:0;margin-top:1px;
+  stroke:var(--slate);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;
+}
+.provenance p{font-size:13px;line-height:1.6;color:var(--slate);margin:0}
+.provenance b{color:var(--ink);font-weight:600}
+@media(max-width:640px){
+  .provenance{padding:13px 15px;gap:11px}
+  .provenance p{font-size:12.5px}
+}
+
 </style>
 </head>
 <body>

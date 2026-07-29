@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loop EHR | Megsolve</title>
-<meta name="description" content="Loop EHR: an electronic health record and clinic operations platform by Megsolve. In development, Pakistan first.">
+<title>Loop HOS | Megsolve</title>
+<meta name="description" content="Loop HOS: a health operating system for clinics and hospitals by Megsolve. In development, Pakistan first.">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR4nO2bMVLDMBBFv9VRQQdnAEpKbsQZqDgDN6KkhJyBdKSihEqMYiuyFe/uH0v7u9gaz76ntTzWxAMqcnl9+1sznpXDfjcsHTs7cCvQpzInI5RObh0emGfI2mkBPJdcN0w6oFV4IM8W5ga0ljFjcQ3oIf8Cepj9mJQ1jA/0ksjstwC7AHaGHts/Tfcd4ALYBbAjIuD761PiMtW5f3pffY2zF8Ec9NXN3eqCliYH//H6UH0d0VvAqhMkZj5GfA3QliAJDygtgloSpOEBxaeAtAQNeED5MSglQQseEBaQewqslSC12p+KeAdIStCGB5RuAQkJFvCA4hqwRoIVPKC8CJ4jwRIeMHgZqpFgDQ8YvQ0ukcCABwxfh0sSWPCA8X5ATgITHiBsiKQSHl9+Juct4QHSjlCU8PZ8cXTcGh4gbolFCRGaAQ+Q9wTHEhjxTVF2Aey4AHYB7LgAdgHsuAB2Aey4AHYB7LgAdgHsuAB2Aez4v8TYBbDjAtgFsBNqPjBqLYf9bvAOYBfATgDqvrNrJZE5jA/0kJTVb4H0Rw9dMGacdEDLEnJsRdhW3hNKk1pcA1rohjmGKsCtdETNxP0BIwej2OGtuYQAAAAASUVORK5CYII=">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABwUlEQVR4nO2bMVLDMBBFv9VRQQdnAEpKbsQZqDgDN6KkhJyBdKSihEqMYiuyFe/uH0v7u9gaz76ntTzWxAMqcnl9+1sznpXDfjcsHTs7cCvQpzInI5RObh0emGfI2mkBPJdcN0w6oFV4IM8W5ga0ljFjcQ3oIf8Cepj9mJQ1jA/0ksjstwC7AHaGHts/Tfcd4ALYBbAjIuD761PiMtW5f3pffY2zF8Ec9NXN3eqCliYH//H6UH0d0VvAqhMkZj5GfA3QliAJDygtgloSpOEBxaeAtAQNeED5MSglQQseEBaQewqslSC12p+KeAdIStCGB5RuAQkJFvCA4hqwRoIVPKC8CJ4jwRIeMHgZqpFgDQ8YvQ0ukcCABwxfh0sSWPCA8X5ATgITHiBsiKQSHl9+Juct4QHSjlCU8PZ8cXTcGh4gbolFCRGaAQ+Q9wTHEhjxTVF2Aey4AHYB7LgAdgHsuAB2Aey4AHYB7LgAdgHsuAB2Aez4v8TYBbDjAtgFsBNqPjBqLYf9bvAOYBfATgDqvrNrJZE5jA/0kJTVb4H0Rw9dMGacdEDLEnJsRdhW3hNKk1pcA1rohjmGKsCtdETNxP0BIwej2OGtuYQAAAAASUVORK5CYII=">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -854,9 +854,10 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
 @media(max-width:640px){.prod-hero{padding:28px 22px;border-radius:14px}.prod-hero > p{font-size:15.5px}}
 
 /* module grid */
-.modules{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
-  background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.module{background:var(--card);padding:26px 24px;transition:background .3s}
+.modules{display:grid;grid-template-columns:repeat(3,1fr);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.module{background:var(--card);padding:26px 24px;transition:background .3s;
+  box-shadow:1px 0 0 var(--line),0 1px 0 var(--line)}
 .module:hover{background:var(--cobalt-soft)}
 .module .mod-num{font-family:var(--font-mono);font-size:10px;letter-spacing:.09em;color:var(--cobalt)}
 .module h4{font-family:var(--font-display);font-size:15.5px;font-weight:600;letter-spacing:-.01em;margin:9px 0 7px}
@@ -1032,17 +1033,17 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
 <header class="page-hero page">
   <span class="spec">SPEC 05 &middot; PRODUCTS</span>
   <h1>We build software.<br><span style="color:var(--cobalt)">Now we build a product.</span></h1>
-  <p>Megsolve has spent its life solving clinic operations one engagement at a time. Loop EHR is what those engagements taught us, assembled into a single platform.</p>
+  <p>Megsolve has spent its life solving clinic operations one engagement at a time. Loop HOS is what those engagements taught us, assembled into a single platform.</p>
 </header>
 
 <section class="section--tight page">
   <div class="prod-hero reveal">
     <span class="prod-badge">In active development</span>
-    <div class="prod-name">Loop <span>EHR</span></div>
-    <p>An electronic health record and clinic operations platform built for how practices in this region actually run: multi-branch, procedure-heavy, and until now held together by paper registers and group chats.</p>
+    <div class="prod-name">Loop <span>HOS</span></div>
+    <p>A health operating system for clinics and hospitals, built for how practices in this region actually run: multi-branch, procedure-heavy, and until now held together by paper registers and group chats.</p>
     <dl class="kv" style="margin-top:30px">
-      <div><dt>Product</dt><dd>Loop EHR</dd></div>
-      <div><dt>Category</dt><dd>EHR and Clinic Operations</dd></div>
+      <div><dt>Product</dt><dd>Loop HOS</dd></div>
+      <div><dt>Category</dt><dd>Health Operating System</dd></div>
       <div><dt>First market</dt><dd>Pakistan</dd></div>
       <div><dt>Status</dt><dd>In development</dd></div>
     </dl>
@@ -1057,7 +1058,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <div class="prose reveal">
     <p>Megsolve started because a technician in an Islamabad clinic was writing a graft count on a scrap of paper at midnight, and nobody in the building could answer how much longer the procedure would take.</p>
     <p>Since then we have built the pieces separately, and each time for a specific practice: a patient management system, a duty roster platform, an inventory application, a vendor management tool. Every one solved a real problem. Every one also proved the same thing, which is that these are not separate problems. A procedure that overruns is a rostering problem, a consumables problem, a scheduling problem, and a patient communication problem at the same time.</p>
-    <p><strong>Loop EHR is those systems, built as one.</strong> Not a generic EHR adapted for this market, but a platform designed from the operational reality we have been working inside since the beginning.</p>
+    <p><strong>Loop HOS is those systems, built as one.</strong> Not a generic records system adapted for this market, but a platform designed from the operational reality we have been working inside since the beginning.</p>
   </div>
 </section>
 
@@ -1066,7 +1067,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
     <h2>What is in it</h2>
     <span class="spec">02 &middot; MODULES</span>
   </div>
-  <div class="modules reveal"><div class="module"><span class="mod-num">MOD 01</span><h4>Patient records</h4><p>Full clinical history, documents, and consent in one record. Replaces paper files and the folders behind reception.</p></div><div class="module"><span class="mod-num">MOD 02</span><h4>Appointments and scheduling</h4><p>Booking, reminders, and calendar management across practitioners and rooms, with conflict prevention built in.</p></div><div class="module"><span class="mod-num">MOD 03</span><h4>Procedure and theatre management</h4><p>Theatre scheduling, live procedure timers, and step logging for long-form procedures. Built for practices where a case runs seven hours, not seven minutes.</p></div><div class="module"><span class="mod-num">MOD 04</span><h4>Staff rostering</h4><p>Drag-and-drop duty rosters, automated conflict detection, shift swaps, and attendance tied to the published roster.</p></div><div class="module"><span class="mod-num">MOD 05</span><h4>Inventory and consumables</h4><p>Stock levels per branch, consumable usage against procedures, and reorder thresholds that reflect real burn rate.</p></div><div class="module"><span class="mod-num">MOD 06</span><h4>Vendor and procurement</h4><p>Supplier records, purchase order workflows, payment tracking, and performance scoring.</p></div><div class="module"><span class="mod-num">MOD 07</span><h4>Billing and payments</h4><p>Invoicing, payment capture across cash, card, and account, and reconciliation that closes at month end.</p></div><div class="module"><span class="mod-num">MOD 08</span><h4>Follow-up and engagement</h4><p>Scheduled post-procedure touchpoints, outcome tracking, and patient communication that does not depend on someone remembering.</p></div><div class="module"><span class="mod-num">MOD 09</span><h4>Reporting</h4><p>Operational and clinical reporting across branches, built for the questions owners actually ask.</p></div></div>
+  <div class="modules reveal"><div class="module"><span class="mod-num">MOD 01</span><h4>Electronic health and medical records</h4><p>Full clinical and medical record in one place, replacing paper files and the folders behind reception.</p></div><div class="module"><span class="mod-num">MOD 02</span><h4>Patient history</h4><p>Complete longitudinal history per patient: past procedures, outcomes, documents, and consent, available to whoever needs it.</p></div><div class="module"><span class="mod-num">MOD 03</span><h4>Appointment and scheduling</h4><p>Booking, reminders, and calendar management across practitioners and rooms, with conflict prevention built in.</p></div><div class="module"><span class="mod-num">MOD 04</span><h4>Procedure and theatre management</h4><p>Theatre scheduling, live procedure timers, and step logging for long-form procedures. Built for practices where a case runs seven hours, not seven minutes.</p></div><div class="module"><span class="mod-num">MOD 05</span><h4>Staff rostering</h4><p>Drag-and-drop duty rosters, automated conflict detection, shift swaps, and attendance tied to the published roster.</p></div><div class="module"><span class="mod-num">MOD 06</span><h4>Inventory and consumables</h4><p>Stock levels per branch, consumable usage against procedures, and reorder thresholds that reflect real burn rate.</p></div><div class="module"><span class="mod-num">MOD 07</span><h4>Vendor and procurement</h4><p>Supplier records, purchase order workflows, payment tracking, and performance scoring.</p></div><div class="module"><span class="mod-num">MOD 08</span><h4>Billing and payments</h4><p>Invoicing, payment capture across cash, card, and account, and reconciliation that closes at month end.</p></div><div class="module"><span class="mod-num">MOD 09</span><h4>Follow-up and engagement</h4><p>Scheduled post-procedure touchpoints, outcome tracking, and patient communication that does not depend on someone remembering.</p></div><div class="module"><span class="mod-num">MOD 10</span><h4>Reporting</h4><p>Operational and clinical reporting across branches.</p></div><div class="module"><span class="mod-num">MOD 11</span><h4>Patient experience center</h4><p>A single front-of-house view: intake, live status of everyone in the building, communication history, and feedback capture.</p></div></div>
 </section>
 
 <section class="section--tight page">
@@ -1097,9 +1098,9 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
   <div class="story reveal">
     <span class="spec">EARLY ACCESS</span>
     <h3 style="font-size:clamp(22px,3.2vw,32px);margin-top:18px;line-height:1.2">Want to shape it?</h3>
-    <p style="margin-top:16px">Loop EHR is in active development and we are working with a small number of practices during the build. If you run a clinic and recognise the problems above, we would rather hear from you now than after the product is finished.</p>
+    <p style="margin-top:16px">Loop HOS is in active development and we are working with a small number of practices during the build. If you run a clinic and recognise the problems above, we would rather hear from you now than after the product is finished.</p>
     <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn btn-primary" href="contact.html">Talk to us about Loop EHR <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a class="btn btn-primary" href="contact.html">Talk to us about Loop HOS <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a class="btn btn-ghost" href="case-studies.html">See the work behind it</a>
     </div>
   </div>
@@ -1120,7 +1121,7 @@ a,button,.card,.acc-head,.filter{-webkit-tap-highlight-color:rgba(37,71,232,.12)
       <h4>Explore</h4>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="products.html">Loop EHR</a>
+      <a href="products.html">Loop HOS</a>
       <a href="case-studies.html">Case Studies</a>
       <a href="team.html">The Squad</a>
       <a href="contact.html">Contact</a>
